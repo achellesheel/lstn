@@ -1,6 +1,25 @@
 # lstm
 Stock price analysis
 Explained steps in the code itself. 
+
+**LSTM (Long Short-Term Memory)** is a type of **Recurrent Neural Network (RNN)** designed to learn and remember information over long sequences, overcoming traditional RNN limitations like the vanishing gradient problem. LSTMs use internal gates (forget, input, output) and a memory cell to control the flow of information, allowing them to capture long-term dependencies in sequential data, making them ideal for tasks like language translation, speech recognition, and **time series forecasting**. 
+How LSTMs Work
+**Memory Cell:** A core component that maintains a state (memory) over time, like a conveyor belt for information.
+**Gates**: These are neural network layers (sigmoid/tanh) that regulate what information enters, leaves, or stays in the cell.
+**Forget Gate:** Decides what information to discard from the cell state.
+**Input Gate:** Decides what new information to store in the cell state.
+**Output Gate:** Decides what to output from the cell. 
+
+When LSTM Tends to Be Better
+Long Short-Term Memory (LSTM) models are a type of recurrent neural network that excels at handling sequential and time-series data due to their ability to capture long-term dependencies and patterns over time. 
+Time-dependent data: LSTMs are better when the sequence and timing of financial data (e.g., a borrower's payment history over several years) are critical to the prediction.
+Capturing complex dynamics: They can capture complex, non-linear patterns within continuous data that may be difficult for other models to identify.
+Imbalanced datasets: In some fraud or default detection scenarios where the "default" class is rare, LSTMs have shown superior performance in identifying these minority cases. 
+When XGBoost Tends to Be Better
+eXtreme Gradient Boosting (XGBoost) is a powerful ensemble learning algorithm that builds models in a sequential, tree-based manner. It is highly regarded for its efficiency and robust handling of structured, tabular data. 
+Structured/Tabular data: XGBoost typically performs exceptionally well with traditional, structured financial data that is not strongly time-dependent, such as static features like debt-to-income ratios, credit scores, and demographic information.
+Speed and interpretability: It generally offers faster training and prediction times and provides better interpretability through feature importance analysis, which helps in understanding which variables drive the model's decisions (e.g., debt ratio, cash ratio).
+Smaller datasets: XGBoost can perform robustly even with relatively smaller datasets, whereas LSTMs often require large volumes of data for optimal performance. 
 """
 =================================================================================
 ADVANCED STOCK PRICE PREDICTION USING LSTM & TIME SERIES FORECASTING
