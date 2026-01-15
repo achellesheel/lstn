@@ -122,3 +122,37 @@ TSLA >
 ↑↓ for history. Search history with c-↑/c-↓
 
 Click to add a cell.
+
+
+TSLA >  
+✗ Unknown command: ''. Type 'help' for available commands.
+
+TSLA >  help
+
+Available Commands:
+  • Enter a number: Record new price and get prediction
+  • mode: Change prediction mode (FAST/BALANCED/ACCURATE/AUTO)
+  • stats: View session performance statistics
+  • help: Show this help message
+  • quit/exit: End the trading session
+
+TSLA >  quit
+
+Exiting trading session...
+
+======================================================================
+FINAL SESSION SUMMARY
+======================================================================
+
+Stock Symbol: TSLA
+Total Trades: 4
+Predictions Made: 3
+Average Prediction Error: 526.389%
+Prediction Accuracy: -426.39%
+Final Price: $1.00
+Session Volatility: 0.9329
+
+======================================================================
+
+Thank you for using the Latency-Aware Market Prediction Engine!
+
