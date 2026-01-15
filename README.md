@@ -1,3 +1,17 @@
+latency_aware_engine/
+│
+├── data_loader.py
+├── feature_engineering.py
+├── models/
+│   ├── xgb_model.py
+│   ├── cnn_model.py
+│   └── lstm_model.py
+│
+├── model_selector.py
+├── evaluator.py
+└── main.ipynb   ← Jupyter entry point
+
+
 # lstm
 Stock price analysis
 Explained steps in the code itself. 
